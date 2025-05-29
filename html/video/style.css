@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    width: 765px; /* 视频宽度 */
+    height: 430px; /* 视频高度 */
+}
+
+.wrapper {
+    display: flex; /* 横向排列视频和速度控制条 */
+    width: 850px;
+}
+
+body {
+    height: 100vh;
+    background: beige url(https://unsplash.it/1500/900?image=1021); /* 设置背景图片 */
+    background-size: cover; /* 背景铺满 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+}
+
+.speed {
+    flex: 1;
+    display: inline-block;
+    background: white; /* 白色背景 */
+    margin: 10px;
+    border-radius: 50px; /* 圆角 */
+    overflow: hidden;   /* 超出部分隐藏 */
+}
+
+.speed-bar {
+    width: 100%;
+    height: 15%; /* 初始高度为容器的 15% */
+    background: linear-gradient(to bottom, #654ea3, #eaafc8); /* 渐变色背景 */
+    display: flex;
+    justify-content: center; /* 水平居中内容 */
+    align-items: center;     /* 垂直居中内容 */
+    color: white;            /* 字体颜色白色 */
+}

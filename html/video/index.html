@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入页面样式 -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 视频播放器，class 为 flex，方便 CSS 控制尺寸 -->
+        <video class="flex" src="https://media.w3.org/2010/05/sintel/trailer.mp4" controls></video>
+        <!-- 速度控制区域，包含一个白色容器和内部的彩色进度条 -->
+        <div class="speed">
+            <!-- 彩色进度条，显示当前速度，初始为 1x -->
+            <div class="speed-bar">1x</div>
+        </div>
+    </div>
+    <!-- 引入交互脚本 -->
+    <script src="./index.js"></script>
+</body>
+</html>
